@@ -19,8 +19,7 @@ def get_input():
 
 #  function Monty hall
 def monty_hall(velkost):
-    #  defining the necessary constants.    
-    field=[]    
+    #  defining the necessary constants.       
     n_celkom=0; moderator=0; car=0; first=0; second=0
     for j in range(1,velkost+1):
         car=random.randint(1,3)            
@@ -43,7 +42,7 @@ def monty_hall(velkost):
             if first==3 and moderator==1: second=2
             if first==3 and moderator==2: second=1
         if second==car: n_celkom+=1
-        volume=round((n_celkom/velkost)*100,2)
+    volume=round((n_celkom/velkost)*100,2)
     print(volume)
     return volume        
 
